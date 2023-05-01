@@ -1,3 +1,5 @@
+import { changeLanguageEn, changeLanguageRu } from '../language/changeLanguageRu.js';
+
 const CssClassesButtons = {
   ROW: 'buttons-row',
   BUTTON: 'button',
@@ -8,8 +10,24 @@ const CssClassesButtons = {
 };
 const buttonsRow = document.createElement('div');
 buttonsRow.classList.add(CssClassesButtons.ROW);
+
+// function changeLanguageEn() {
+//   localStorage.setItem('Language', 'en');
+// }
+// function changeLanguageRu() {
+//   localStorage.setItem('Language', 'ru');
+// }
+
 async function workJson() {
-  const keys = '../virtual-keyboard/script/json-file/key-EN.json';
+  const language = localStorage.getItem('Language');
+  let keys;
+  if (language === 'ru') {
+    keys = '../virtual-keyboard/script/json-file/key-RU.json';
+    changeLanguageRu();
+  } else {
+    keys = '../virtual-keyboard/script/json-file/key-EN.json';
+    changeLanguageEn();
+  }
   const res = await fetch(keys);
   const data = await res.json();
 
