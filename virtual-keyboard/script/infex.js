@@ -1,9 +1,11 @@
 import { creatingBubbles } from './components/section-bubbles.js';
 import { creatingKeyboard } from './components/creating-keyboard.js';
-import { workJsonCapsLockShift } from './components/buttons/creating-button-capslog-shift.js';
+import { workJsonCapsLockShiftEn } from './components/buttons/capslog-shift-En.js';
+import { workJsonCapsLockShiftRu } from './components/buttons/capslog-shift-Ru.js';
 
 const keyboard = creatingKeyboard();
 const bubbles = creatingBubbles();
+
 // let capsFlag = false;
 
 document.body.append(bubbles);
@@ -18,24 +20,25 @@ const CssClassesKeyStroke = {
   COLLOR: '.led-blue',
 };
 
+const textareaBlock = document.querySelector(CssClassesKeyStroke.TEXTAREA);
+
 document.onkeydown = function keyStrokeDown(event) {
   const keysBlock = document.querySelectorAll(CssClassesKeyStroke.COLLOR);
-  const textareaBlock = document.querySelectorAll(CssClassesKeyStroke.TEXTAREA);
 
   keysBlock.forEach((element) => {
     if (element.id === event.code && element.classList.contains(CssClassesKeyStroke.BUTTON)) {
       event.preventDefault();
-      textareaBlock.values += 1;
+      textareaBlock.value += element.innerHTML;
       element.classList.add(CssClassesKeyStroke.ACTIVE);
     } else if (element.id === event.code && element.id === 'CapsLock') {
       element.classList.toggle(CssClassesKeyStroke.ACTIVE);
-      workJsonCapsLockShift();
+      workJsonCapsLockShiftEn();
     } else if (element.id === event.code && element.id === 'ShiftLeft') {
       element.classList.add(CssClassesKeyStroke.ACTIVE);
-      workJsonCapsLockShift();
+      workJsonCapsLockShiftEn();
     } else if (element.id === event.code && element.id === 'ShiftRight') {
       element.classList.add(CssClassesKeyStroke.ACTIVE);
-      workJsonCapsLockShift();
+      workJsonCapsLockShiftEn();
     }
   });
 };
@@ -43,7 +46,7 @@ document.onkeydown = function keyStrokeDown(event) {
 document.onkeyup = function keyStrokeUp(event) {
   document.querySelectorAll(CssClassesKeyStroke.COLLOR).forEach((element) => {
     if (element.id === event.code && element.id !== 'CapsLock') {
-      workJsonCapsLockShift();
+      workJsonCapsLockShiftEn();
       element.classList.remove(CssClassesKeyStroke.ACTIVE);
     }
   });
@@ -54,12 +57,14 @@ function keyStrokeMauseDown(event) {
     if (event.target.id === 'CapsLock') {
       // capsFlag = false;
       event.target.classList.toggle(CssClassesKeyStroke.ACTIVE);
-      workJsonCapsLockShift();
+      workJsonCapsLockShiftEn();
     } else if (event.target.id === 'ShiftLeft' || event.target.id === 'ShiftRight') {
       event.target.classList.add(CssClassesKeyStroke.ACTIVE);
-      workJsonCapsLockShift();
+      workJsonCapsLockShiftEn();
     } else {
       event.target.classList.add(CssClassesKeyStroke.ACTIVE);
+      event.preventDefault();
+      textareaBlock.value += event.target.innerHTML;
     }
   }
 }
@@ -70,7 +75,7 @@ function keyStrokeMauseUp(event) {
   if (event.target.classList.contains('led-blue') && event.target.id !== 'CapsLock') {
     if (event.target.id === 'ShiftLeft' || event.target.id === 'ShiftRight') {
       event.target.classList.remove(CssClassesKeyStroke.ACTIVE);
-      workJsonCapsLockShift();
+      workJsonCapsLockShiftEn();
     } else {
       event.target.classList.remove(CssClassesKeyStroke.ACTIVE);
     }

@@ -1,11 +1,11 @@
-async function workJsonShift() {
+async function workJsonCapsLockShiftEn() {
   const keys = '../virtual-keyboard/script/json-file/key-EN.json';
   const res = await fetch(keys);
   const data = await res.json();
   const key = document.querySelectorAll('.led-blue');
+  const caps = document.querySelector('#CapsLock');
   const shiftLeft = document.querySelector('#ShiftLeft');
   const shiftRight = document.querySelector('#ShiftRight');
-  const caps = document.querySelector('#CapsLock');
   if (shiftLeft.classList.contains('active') && !caps.classList.contains('active')) {
     key.forEach((param) => {
       data.forEach((element) => {
@@ -78,4 +78,4 @@ async function workJsonShift() {
     });
   }
 }
-export { workJsonShift };
+export { workJsonCapsLockShiftEn };

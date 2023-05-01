@@ -1,5 +1,5 @@
-async function workJsonCapsLockShift() {
-  const keys = '../virtual-keyboard/script/json-file/key-EN.json';
+async function workJsonCapsLockShiftRu() {
+  const keys = '../virtual-keyboard/script/json-file/key-RU.json';
   const res = await fetch(keys);
   const data = await res.json();
   const key = document.querySelectorAll('.led-blue');
@@ -78,4 +78,4 @@ async function workJsonCapsLockShift() {
     });
   }
 }
-export { workJsonCapsLockShift };
+export { workJsonCapsLockShiftRu };
