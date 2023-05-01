@@ -29,16 +29,15 @@ document.onkeydown = function keyStrokeDown(event) {
   const altRight = document.querySelector('#AltRight');
   event.preventDefault();
   const language = localStorage.getItem('Language');
+  const start = textareaBlock.selectionStart;
+  const end = textareaBlock.selectionEnd;
 
   keysBlock.forEach((element) => {
     if (element.id === event.code && element.classList.contains(CssClassesKey.BUTTON)) {
       textareaBlock.value += element.innerHTML;
       element.classList.add(CssClassesKey.ACTIVE);
     } else if (element.id === event.code && element.classList.contains(CssClassesKey.BUTTON2)) {
-      //DELETE ,Backspace ,Win
       element.classList.add(CssClassesKey.ACTIVE);
-      // if (element.id === event.code && element.id === 'DELETE') {
-      // } else if (element.id === event.code && element.id === 'Backspace') {
       if (element.id === event.code && element.id === 'Enter') {
         textareaBlock.value += '\n';
       } else if (element.id === event.code && element.id === 'ControlLeft') {
@@ -81,19 +80,36 @@ document.onkeydown = function keyStrokeDown(event) {
             changeLanguageRu();
           }
         }
+      } else if (element.id === event.code && element.id === 'Backspace') {
+        if (start !== 0 && start === end) {
+          textareaBlock.value = (textareaBlock.value.substring(0, start - 1)
+                              + textareaBlock.value.substring(start));
+          textareaBlock.setSelectionRange(start - 1, start - 1);
+        } else {
+          textareaBlock.value = (textareaBlock.value.substring(0, start)
+                              + textareaBlock.value.substring(end));
+          textareaBlock.setSelectionRange(start, start);
+        }
+      } else if (element.id === event.code && element.id === 'Delete') {
+        textareaBlock.value = (textareaBlock.value.substring(0, start)
+                              + textareaBlock.value.substring(start + 1));
+        textareaBlock.setSelectionRange(start, start);
       }
     } else if (element.id === event.code && element.classList.contains(CssClassesKey.BUTTON3)) {
       element.classList.add(CssClassesKey.ACTIVE);
       textareaBlock.value += ' ';
     } else if (element.id === event.code && element.classList.contains(CssClassesKey.BUTTON4)) {
-      element.classList.add(CssClassesKey.ACTIVE);
       if (element.id === event.code && element.id === 'CapsLock') {
+        element.classList.toggle(CssClassesKey.ACTIVE);
         workJsonCapsLockShiftEn();
       } else if (element.id === event.code && element.id === 'ShiftLeft') {
+        element.classList.add(CssClassesKey.ACTIVE);
         workJsonCapsLockShiftEn();
       } else if (element.id === event.code && element.id === 'ShiftRight') {
+        element.classList.add(CssClassesKey.ACTIVE);
         workJsonCapsLockShiftEn();
       } else if (element.id === event.code && element.id === 'Tab') {
+        element.classList.add(CssClassesKey.ACTIVE);
         textareaBlock.value += '\t';
       }
     }
@@ -110,6 +126,8 @@ document.onkeyup = function keyStrokeUp(event) {
 };
 
 function keyStrokeMauseDown(event) {
+  const start = textareaBlock.selectionStart;
+  const end = textareaBlock.selectionEnd;
   if (event.target.classList.contains('led-blue')) {
     if (event.target.id === 'CapsLock') {
       event.target.classList.toggle(CssClassesKey.ACTIVE);
@@ -126,10 +144,26 @@ function keyStrokeMauseDown(event) {
     } else if (event.target.id === 'Tab') {
       textareaBlock.value += '\t';
       event.target.classList.add(CssClassesKey.ACTIVE);
-    } else if (event.target.id === 'Win' || event.target.id === 'AltLeft' || event.target.id === 'AltLeft') {
+    } else if (event.target.id === 'Win' || event.target.id === 'AltRight' || event.target.id === 'AltLeft') {
       event.target.classList.add(CssClassesKey.ACTIVE);
     } else if (event.target.id === 'ControlRight' || event.target.id === 'ControlLeft') {
       event.target.classList.add(CssClassesKey.ACTIVE);
+    } else if (event.target.id === 'Backspace') {
+      event.target.classList.add(CssClassesKey.ACTIVE);
+      if (start !== 0 && start === end) {
+        textareaBlock.value = (textareaBlock.value.substring(0, start - 1)
+                            + textareaBlock.value.substring(start));
+        textareaBlock.setSelectionRange(start - 1, start - 1);
+      } else {
+        textareaBlock.value = (textareaBlock.value.substring(0, start)
+                            + textareaBlock.value.substring(end));
+        textareaBlock.setSelectionRange(start, start);
+      }
+    } else if (event.target.id === 'Delete') {
+      event.target.classList.add(CssClassesKey.ACTIVE);
+      textareaBlock.value = (textareaBlock.value.substring(0, start)
+                            + textareaBlock.value.substring(start + 1));
+      textareaBlock.setSelectionRange(start, start);
     } else {
       event.target.classList.add(CssClassesKey.ACTIVE);
       textareaBlock.value += event.target.innerHTML;

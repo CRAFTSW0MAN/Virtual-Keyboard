@@ -15,33 +15,33 @@ body {
 }
 .bubbles .bubbles-left, .bubbles .bubbles-right {
   width: 20%;
-  background: url("/virtual-keyboard/assets/img/soap1.png") 0/35% no-repeat, url("/virtual-keyboard/assets/img/soap2.png") right/35% no-repeat, url("/virtual-keyboard/assets/img/soap3.png") left/10% no-repeat, url("/virtual-keyboard/assets/img/soap1.png") left/10% no-repeat, url("/virtual-keyboard/assets/img/soap2.png") right/25% no-repeat, url("/virtual-keyboard/assets/img/soap3.png") 0/20% no-repeat, url("/virtual-keyboard/assets/img/soap1.png") left/15% no-repeat, url("/virtual-keyboard/assets/img/soap2.png") right/35% no-repeat, url("/virtual-keyboard/assets/img/soap3.png") 0/10% no-repeat;
+  background: url("/virtual-keyboard/assets/img/soap1.png") 0/35% no-repeat, url("/virtual-keyboard/assets/img/soap2.png") right/35% no-repeat, url("/virtual-keyboard/assets/img/soap3.png") left/10% no-repeat, url("/virtual-keyboard/assets/img/soap1.png") left/20% no-repeat, url("/virtual-keyboard/assets/img/soap2.png") right/25% no-repeat, url("/virtual-keyboard/assets/img/soap3.png") 0/20% no-repeat, url("/virtual-keyboard/assets/img/soap1.png") left/15% no-repeat, url("/virtual-keyboard/assets/img/soap2.png") right/35% no-repeat, url("/virtual-keyboard/assets/img/soap3.png") 0/10% no-repeat, url("/virtual-keyboard/assets/img/soap1.png") 0/15% no-repeat, url("/virtual-keyboard/assets/img/soap2.png") left/10% no-repeat, url("/virtual-keyboard/assets/img/soap3.png") right/30% no-repeat, url("/virtual-keyboard/assets/img/soap1.png") left/25% no-repeat, url("/virtual-keyboard/assets/img/soap2.png") left/35% no-repeat, url("/virtual-keyboard/assets/img/soap3.png") 0/30% no-repeat, url("/virtual-keyboard/assets/img/soap1.png") right/35% no-repeat, url("/virtual-keyboard/assets/img/soap2.png") left/35% no-repeat, url("/virtual-keyboard/assets/img/soap3.png") 0/25% no-repeat;
   -webkit-animation: loading 20s infinite linear;
           animation: loading 20s infinite linear;
-  background-position: 50% 1500px, left 2500px, right, 50% 1500px, right 500px, left, 70% 1000px, 100% 50px, left 1500px;
+  background-position: 50% 1500px, left 2500px, right, 50% 1500px, right 500px, left, 70% 1000px, 100% 50px, left 1500px, 30% 300px, right 1000px, right, 40% 800px, right 900px, left, 20% 600px, 90% 100px, left 200px;
 }
 @-webkit-keyframes loading {
-  100% {
+  0% {
     background-position: -200px -200px;
   }
 }
 @keyframes loading {
-  100% {
+  0% {
     background-position: -200px -200px;
   }
 }
 .bubbles .bubbles-right {
-  -webkit-animation: loading2 20s infinite linear;
-          animation: loading2 20s infinite linear;
+  -webkit-animation: loading2 15s infinite linear;
+          animation: loading2 15s infinite linear;
 }
 @-webkit-keyframes loading2 {
-  100% {
-    background-position: 500px -200px;
+  0% {
+    background-position: 600px -200px;
   }
 }
 @keyframes loading2 {
-  100% {
-    background-position: 500px -200px;
+  0% {
+    background-position: 600px -200px;
   }
 }
 
@@ -88,6 +88,7 @@ body {
   cursor: pointer;
   position: relative;
   font-size: 25px;
+  font-weight: 900;
   margin: 3px;
   transition: 0.3s;
 }
@@ -162,7 +163,7 @@ body {
 .keyboard .keyboard-buttons .buttons-row .led-blue {
   background: rgb(0, 103, 175);
   background: linear-gradient(0deg, rgb(214, 218, 145) 0%, rgb(0, 103, 175) 100%);
-  transition: 1s;
+  transition: 0.3s;
 }
 .keyboard .keyboard-buttons .buttons-row .active {
   background: rgb(129, 164, 188);

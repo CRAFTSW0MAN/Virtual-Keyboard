@@ -12,7 +12,7 @@ function creatingInfo() {
   titleLanguageChange.classList.add(CssClassesInfo.TITLE1);
   titleSistem.classList.add(CssClassesInfo.TITLE2);
 
-  titleLanguageChange.innerHTML = 'Language switch combination: Ctrl + Alt';
+  titleLanguageChange.innerHTML = 'Language switch combination: Ctrl + Alt on a real keyboard';
   titleSistem.innerHTML = 'The keyboard was created in the Windows10 operating system';
 
   component.append(titleLanguageChange);
