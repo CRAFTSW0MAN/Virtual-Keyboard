@@ -9,7 +9,6 @@
   font-weight: 900;
   border-radius: 20%;
   box-shadow: inset rgba(0,0,0,.6) 0 -3px 8px, inset rgba(252,255,255,.7) 0 3px 8px, rgba(0,0,0,.8) 0 3px 8px -3px;
-  // background: linear-gradient(#dead45, #e38ab8);
   background:  transparentize( rgb(255, 255, 255), 0.8);
   backdrop-filter: blur(5px);
 
@@ -44,7 +43,6 @@
         font-weight: 900;
         margin: 3px;
         transition: 0.3s;
-        // box-shadow: 0 -2px 0 3px darken(rgb(0, 103, 175), 1%) inset, 0 10px 5px rgba(darken(rgb(0, 103, 175), 40%), 0.17), 0 15px rgba(#fff, 0.25) inset;
       }
 
       .button::after{
@@ -70,7 +68,6 @@
         font-size: 25px;
         margin: 3px;
         transition: 0.3s;
-        // box-shadow: 0 -2px 0 3px darken(rgb(0, 103, 175), 1%) inset, 0 10px 5px rgba(darken(rgb(0, 103, 175), 40%), 0.17), 0 15px rgba(#fff, 0.25) inset;
       }
 
       .button2::after{
@@ -99,7 +96,6 @@
         font-size: 25px;
         margin: 3px;
         transition: 0.3s;
-        // box-shadow: 0 -2px 0 3px darken(rgb(0, 103, 175), 1%) inset, 0 10px 5px rgba(darken(rgb(0, 103, 175), 40%), 0.17), 0 15px rgba(#fff, 0.25) inset;
       }
       .button4 {
         width: 130px;
@@ -152,7 +148,6 @@
     height: 25%;
     font-family: 'Pacifico', cursive;
     font-size: 45px;
-    // background: linear-gradient(#54c9c2, #b0dea6);
     background: linear-gradient(#e3dc8a,#45deca);
     box-shadow:inset 20px 20px 20px -16px rgba(0,0,0,0.6),1px 1px 5px rgba(255, 255, 255, 1);
     resize: none; /* Запрещаем изменять размер */
@@ -173,6 +168,3 @@
     }
   }
 }
-// .keyboard::before{
-//   filter: blur(50px);
-// }
