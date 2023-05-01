@@ -112,7 +112,6 @@ document.onkeyup = function keyStrokeUp(event) {
 function keyStrokeMauseDown(event) {
   if (event.target.classList.contains('led-blue')) {
     if (event.target.id === 'CapsLock') {
-      // capsFlag = false;
       event.target.classList.toggle(CssClassesKey.ACTIVE);
       workJsonCapsLockShiftEn();
     } else if (event.target.id === 'ShiftLeft' || event.target.id === 'ShiftRight') {
@@ -120,13 +119,17 @@ function keyStrokeMauseDown(event) {
       workJsonCapsLockShiftEn();
     } else if (event.target.id === 'Enter') {
       textareaBlock.value += '\n';
-      event.target.classList.toggle(CssClassesKey.ACTIVE);
+      event.target.classList.add(CssClassesKey.ACTIVE);
     } else if (event.target.id === 'Space') {
       textareaBlock.value += ' ';
-      event.target.classList.toggle(CssClassesKey.ACTIVE);
+      event.target.classList.add(CssClassesKey.ACTIVE);
     } else if (event.target.id === 'Tab') {
       textareaBlock.value += '\t';
-      event.target.classList.toggle(CssClassesKey.ACTIVE);
+      event.target.classList.add(CssClassesKey.ACTIVE);
+    } else if (event.target.id === 'Win' || event.target.id === 'AltLeft' || event.target.id === 'AltLeft') {
+      event.target.classList.add(CssClassesKey.ACTIVE);
+    } else if (event.target.id === 'ControlRight' || event.target.id === 'ControlLeft') {
+      event.target.classList.add(CssClassesKey.ACTIVE);
     } else {
       event.target.classList.add(CssClassesKey.ACTIVE);
       textareaBlock.value += event.target.innerHTML;

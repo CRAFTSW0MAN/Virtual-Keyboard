@@ -11,13 +11,6 @@ const CssClassesButtons = {
 const buttonsRow = document.createElement('div');
 buttonsRow.classList.add(CssClassesButtons.ROW);
 
-// function changeLanguageEn() {
-//   localStorage.setItem('Language', 'en');
-// }
-// function changeLanguageRu() {
-//   localStorage.setItem('Language', 'ru');
-// }
-
 async function workJson() {
   const language = localStorage.getItem('Language');
   let keys;

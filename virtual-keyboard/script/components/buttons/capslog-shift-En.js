@@ -35,8 +35,6 @@ async function workJsonCapsLockShiftEn() {
     key.forEach((param) => {
       data.forEach((element) => {
         if (param.id === element.code) {
-          // метод `Object.assign()`, который копирует свойство `CapsLog` из объекта `element`
-          // в свойство `innerHTML` объекта `param`
           Object.assign(param, { innerHTML: element.Shift });
         }
       });
@@ -45,8 +43,6 @@ async function workJsonCapsLockShiftEn() {
     key.forEach((param) => {
       data.forEach((element) => {
         if (param.id === element.code) {
-          // метод `Object.assign()`, который копирует свойство `CapsLog` из объекта `element`
-          // в свойство `innerHTML` объекта `param`
           Object.assign(param, { innerHTML: element.CapsLogShift });
         }
       });
@@ -55,8 +51,6 @@ async function workJsonCapsLockShiftEn() {
     key.forEach((param) => {
       data.forEach((element) => {
         if (param.id === element.code) {
-          // метод `Object.assign()`, который копирует свойство `CapsLog` из объекта `element`
-          // в свойство `innerHTML` объекта `param`
           Object.assign(param, { innerHTML: element.CapsLogShift });
         }
       });
@@ -65,8 +59,6 @@ async function workJsonCapsLockShiftEn() {
     key.forEach((param) => {
       data.forEach((element) => {
         if (param.id === element.code) {
-          // метод `Object.assign()`, который копирует свойство `CapsLog` из объекта `element`
-          // в свойство `innerHTML` объекта `param`
           Object.assign(param, { innerHTML: element.CapsLog });
         }
       });
@@ -75,8 +67,6 @@ async function workJsonCapsLockShiftEn() {
     key.forEach((param) => {
       data.forEach((element) => {
         if (param.id === element.code) {
-          // метод `Object.assign()`, который копирует свойство `CapsLog` из объекта `element`
-          // в свойство `innerHTML` объекта `param`
           Object.assign(param, { innerHTML: element.CapsLog });
         }
       });
@@ -85,8 +75,6 @@ async function workJsonCapsLockShiftEn() {
     key.forEach((param) => {
       data.forEach((element) => {
         if (param.id === element.code) {
-          // метод `Object.assign()`, который копирует свойство `CapsLog` из объекта `element`
-          // в свойство `innerHTML` объекта `param`
           Object.assign(param, { innerHTML: element.key });
         }
       });
