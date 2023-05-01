@@ -15,11 +15,11 @@ async function workJson() {
 
   data.forEach((element) => {
     const button = document.createElement('button');
-    if (element.key === 'Backspace' || element.key === 'Delete' || element.key === 'Enter' || element.key === 'Alt' || element.key === 'Win' || element.key === 'Ctrl') {
+    if (element.class === 'button2') {
       button.classList.add(CssClassesButtons.BUTTON2);
-    } else if (element.key === '    ') {
+    } else if (element.class === 'button3') {
       button.classList.add(CssClassesButtons.BUTTON3);
-    } else if (element.key === 'Tab' || element.key === 'Caps Lock' || element.key === 'Shift') {
+    } else if (element.class === 'button4') {
       button.classList.add(CssClassesButtons.BUTTON4);
     } else {
       button.classList.add(CssClassesButtons.BUTTON);

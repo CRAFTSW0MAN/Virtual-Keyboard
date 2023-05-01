@@ -6,6 +6,7 @@
   width: 1000px;
   height: 950px;
   font-family: 'Sigmar', cursive;
+  font-weight: 900;
   border-radius: 20%;
   box-shadow: inset rgba(0,0,0,.6) 0 -3px 8px, inset rgba(252,255,255,.7) 0 3px 8px, rgba(0,0,0,.8) 0 3px 8px -3px;
   // background: linear-gradient(#dead45, #e38ab8);
@@ -36,12 +37,12 @@
         width: 40px;
         height: 50px;
         border-radius: 40%;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 2px 1px rgba(0, 0, 0, 0.08);
+        box-shadow: inset rgba(0,0,0,.6) 0 -3px 8px, inset rgba(252,255,255,.7) 0 3px 8px, rgba(0,0,0,.8) 0 3px 8px -3px;
         cursor: pointer;
         position: relative;
         font-size: 25px;
         margin: 3px;
-        transition: 0.5s;
+        transition: 0.3s;
         // box-shadow: 0 -2px 0 3px darken(rgb(0, 103, 175), 1%) inset, 0 10px 5px rgba(darken(rgb(0, 103, 175), 40%), 0.17), 0 15px rgba(#fff, 0.25) inset;
       }
 
@@ -62,12 +63,12 @@
       .button2{
         height: 50px;
         border-radius: 20%;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 2px 1px rgba(0, 0, 0, 0.08);
+        box-shadow: inset rgba(0,0,0,.6) 0 -3px 8px, inset rgba(252,255,255,.7) 0 3px 8px, rgba(0,0,0,.8) 0 3px 8px -3px;
         cursor: pointer;
         position: relative;
         font-size: 25px;
         margin: 3px;
-        transition: 0.5s;
+        transition: 0.3s;
         // box-shadow: 0 -2px 0 3px darken(rgb(0, 103, 175), 1%) inset, 0 10px 5px rgba(darken(rgb(0, 103, 175), 40%), 0.17), 0 15px rgba(#fff, 0.25) inset;
       }
 
@@ -91,12 +92,12 @@
         width: 240px;
         height: 55px;
         border-radius: 20%;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 2px 1px rgba(0, 0, 0, 0.08);
+        box-shadow: inset rgba(0,0,0,.6) 0 -3px 8px, inset rgba(252,255,255,.7) 0 3px 8px, rgba(0,0,0,.8) 0 3px 8px -3px;
         cursor: pointer;
         position: relative;
         font-size: 25px;
         margin: 3px;
-        transition: 0.5s;
+        transition: 0.3s;
         // box-shadow: 0 -2px 0 3px darken(rgb(0, 103, 175), 1%) inset, 0 10px 5px rgba(darken(rgb(0, 103, 175), 40%), 0.17), 0 15px rgba(#fff, 0.25) inset;
       }
       .button4 {
@@ -116,22 +117,20 @@
         left: 10px;
         background: rgb(255, 255, 255);
         background: linear-gradient( 0deg,rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.8) 100%);
-        transition: 0.3s;
+        transition: 1s;
       }
       .led-blue {
         background: rgb(0, 103, 175);
         background: linear-gradient( 0deg,rgb(214, 218, 145) 0%,rgba(0, 103, 175, 1) 100%);
-        transition: 0.5s;
+        transition: 1s;
       }
-      .button2:active,
-      .button:active,
-      .button3:active,
-      .button4:active{
-        background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgb(0, 103, 175) 100%);
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 2px 1px rgba(0, 0, 0, 0.08), 0 0 15px rgba(245, 215, 43, 0.8), 0 0 5px 5px rgba(255, 255, 255, 1);
+      .active{
+        background: rgb(129, 164, 188);
+        background: linear-gradient( 0deg,rgba(225, 243, 255, 1) 0%,rgba(245, 215, 43, 0.8) 80%);
+        box-shadow:  inset rgba(0,0,0,.6) 0 -3px 8px, inset rgba(252,255,255,.7) 0 3px 8px, rgba(0,0,0,.8) 0 3px 8px -3px, 0 0 15px rgba(245, 215, 43, 0.8), 0 0 5px 5px rgba(255, 255, 255, 1);
       }
       .button2:hover.led-blue:hover,
-      .button4:hover.led-blue:hover,
+      .button3:hover.led-blue:hover,
       .button4:hover.led-blue:hover,
       .button:hover.led-blue:hover{
         background: rgb(129, 164, 188);

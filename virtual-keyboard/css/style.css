@@ -53,6 +53,7 @@ body {
   width: 1000px;
   height: 950px;
   font-family: "Sigmar", cursive;
+  font-weight: 900;
   border-radius: 20%;
   box-shadow: inset rgba(0, 0, 0, 0.6) 0 -3px 8px, inset rgba(252, 255, 255, 0.7) 0 3px 8px, rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
   background: rgba(255, 255, 255, 0.2);
@@ -83,12 +84,12 @@ body {
   width: 40px;
   height: 50px;
   border-radius: 40%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 2px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0 -3px 8px, inset rgba(252, 255, 255, 0.7) 0 3px 8px, rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
   cursor: pointer;
   position: relative;
   font-size: 25px;
   margin: 3px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .keyboard .keyboard-buttons .buttons-row .button::after {
   display: block;
@@ -107,12 +108,12 @@ body {
 .keyboard .keyboard-buttons .buttons-row .button2 {
   height: 50px;
   border-radius: 20%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 2px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0 -3px 8px, inset rgba(252, 255, 255, 0.7) 0 3px 8px, rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
   cursor: pointer;
   position: relative;
   font-size: 25px;
   margin: 3px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .keyboard .keyboard-buttons .buttons-row .button2::after {
   display: block;
@@ -133,12 +134,12 @@ body {
   width: 240px;
   height: 55px;
   border-radius: 20%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 2px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0 -3px 8px, inset rgba(252, 255, 255, 0.7) 0 3px 8px, rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
   cursor: pointer;
   position: relative;
   font-size: 25px;
   margin: 3px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .keyboard .keyboard-buttons .buttons-row .button4 {
   width: 130px;
@@ -156,22 +157,20 @@ body {
   left: 10px;
   background: rgb(255, 255, 255);
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.8) 100%);
-  transition: 0.3s;
+  transition: 1s;
 }
 .keyboard .keyboard-buttons .buttons-row .led-blue {
   background: rgb(0, 103, 175);
   background: linear-gradient(0deg, rgb(214, 218, 145) 0%, rgb(0, 103, 175) 100%);
-  transition: 0.5s;
+  transition: 1s;
 }
-.keyboard .keyboard-buttons .buttons-row .button2:active,
-.keyboard .keyboard-buttons .buttons-row .button:active,
-.keyboard .keyboard-buttons .buttons-row .button3:active,
-.keyboard .keyboard-buttons .buttons-row .button4:active {
-  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(0, 103, 175) 100%);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 2px 1px rgba(0, 0, 0, 0.08), 0 0 15px rgba(245, 215, 43, 0.8), 0 0 5px 5px rgb(255, 255, 255);
+.keyboard .keyboard-buttons .buttons-row .active {
+  background: rgb(129, 164, 188);
+  background: linear-gradient(0deg, rgb(225, 243, 255) 0%, rgba(245, 215, 43, 0.8) 80%);
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0 -3px 8px, inset rgba(252, 255, 255, 0.7) 0 3px 8px, rgba(0, 0, 0, 0.8) 0 3px 8px -3px, 0 0 15px rgba(245, 215, 43, 0.8), 0 0 5px 5px rgb(255, 255, 255);
 }
 .keyboard .keyboard-buttons .buttons-row .button2:hover.led-blue:hover,
-.keyboard .keyboard-buttons .buttons-row .button4:hover.led-blue:hover,
+.keyboard .keyboard-buttons .buttons-row .button3:hover.led-blue:hover,
 .keyboard .keyboard-buttons .buttons-row .button4:hover.led-blue:hover,
 .keyboard .keyboard-buttons .buttons-row .button:hover.led-blue:hover {
   background: rgb(129, 164, 188);

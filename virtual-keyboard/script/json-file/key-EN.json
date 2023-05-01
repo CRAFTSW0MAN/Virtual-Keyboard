@@ -1,385 +1,577 @@
 [
   {
     "key": "`",
+    "CapsLog": "`",
     "Shift": "~",
+    "CapsLogShift": "~",
+    "class":"button",
     "code": "Backquote",
     "keyCode": 192
   },
   {
     "key": "1",
+    "CapsLog": "1",
     "Shift": "!",
+    "CapsLogShift": "!",
+    "class":"button",
     "code": "Digit1",
     "keyCode": 49
   },
   {
     "key": "2",
+    "CapsLog": "2",
     "Shift": "@",
+    "CapsLogShift": "@",
+    "class":"button",
     "code": "Digit2",
     "keyCode": 50
   },
   {
     "key": "3",
+    "CapsLog": "3",
     "Shift": "#",
+    "CapsLogShift": "#",
+    "class":"button",
     "code": "Digit3",
     "keyCode": 51
   },
   {
     "key": "4",
+    "CapsLog": "4",
     "Shift": "$",
+    "CapsLogShift": "$",
+    "class":"button",
     "code": "Digit4",
     "keyCode": 52
   },
   {
     "key": "5",
+    "CapsLog": "5",
     "Shift": "%",
+    "CapsLogShift": "%",
+    "class":"button",
     "code": "Digit5",
     "keyCode": 53
   },
   {
     "key": "6",
+    "CapsLog": "6",
     "Shift": "^",
+    "CapsLogShift": "^",
+    "class":"button",
     "code": "Digit6",
     "keyCode": 54
   },
   {
     "key": "7",
+    "CapsLog": "7",
     "Shift": "&",
+    "CapsLogShift": "&",
+    "class":"button",
     "code": "Digit7",
     "keyCode": 55
   },
   {
     "key": "8",
+    "CapsLog": "8",
     "Shift": "*",
+    "CapsLogShift": "*",
+    "class":"button",
     "code": "Digit8",
     "keyCode": 56
   },
   {
     "key": "9",
+    "CapsLog": "9",
     "Shift": "(",
+    "CapsLogShift": "(",
+    "class":"button",
     "code": "Digit9",
     "keyCode": 57
   },
   {
     "key": "0",
+    "CapsLog": "0",
     "Shift": ")",
+    "CapsLogShift": ")",
+    "class":"button",
     "code": "Digit0",
     "keyCode": 48
   },
   {
     "key": "-",
+    "CapsLog": "-",
     "Shift": "_",
+    "CapsLogShift": "_",
+    "class":"button",
     "code": "Minus",
     "keyCode": 189
   },
   {
     "key": "=",
+    "CapsLog": "=",
     "Shift": "+",
+    "CapsLogShift": "+",
+    "class":"button",
     "code": "Equal",
     "keyCode": 187
   },
   {
     "key": "Backspace",
+    "CapsLog": "Backspace",
     "Shift": "Backspace",
+    "CapsLogShift": "Backspace",
+    "class":"button2",
     "code": "Backspace",
     "keyCode": 8
   },
   {
     "key": "Tab",
+    "CapsLog": "Tab",
     "Shift": "Tab",
+    "CapsLogShift": "Tab",
+    "class":"button4",
     "code": "Tab",
     "keyCode": 9
   },
   {
     "key": "q",
+    "CapsLog": "Q",
     "Shift": "Q",
+    "CapsLogShift": "q",
+    "class":"button",
     "code": "KeyQ",
     "keyCode": 81
   },
   {
     "key": "w",
+    "CapsLog": "W",
     "Shift": "W",
+    "CapsLogShift": "w",
+    "class":"button",
     "code": "KeyW",
     "keyCode": 87
   },
   {
     "key": "e",
+    "CapsLog": "E",
     "Shift": "E",
+    "CapsLogShift": "e",
+    "class":"button",
     "code": "KeyE",
     "keyCode": 69
   },
   {
     "key": "r",
+    "CapsLog": "R",
     "Shift": "R",
+    "CapsLogShift": "r",
+    "class":"button",
     "code": "KeyR",
     "keyCode": 82
   },
   {
     "key": "t",
+    "CapsLog": "T",
     "Shift": "T",
+    "CapsLogShift": "t",
+    "class":"button",
     "code": "KeyT",
     "keyCode": 84
   },
   {
     "key": "y",
+    "CapsLog": "Y",
     "Shift": "Y",
+    "CapsLogShift": "y",
+    "class":"button",
     "code": "KeyY",
     "keyCode": 89
   },
   {
     "key": "u",
+    "CapsLog": "U",
     "Shift": "U",
+    "CapsLogShift": "u",
+    "class":"button",
     "code": "KeyU",
     "keyCode": 85
   },
   {
     "key": "i",
+    "CapsLog": "I",
     "Shift": "I",
+    "CapsLogShift": "i",
+    "class":"button",
     "code": "KeyI",
     "keyCode": 73
   },
   {
     "key": "o",
+    "CapsLog": "O",
     "Shift": "O",
+    "CapsLogShift": "o",
+    "class":"button",
     "code": "KeyO",
     "keyCode": 79
   },
   {
     "key": "p",
+    "CapsLog": "P",
     "Shift": "P",
+    "CapsLogShift": "p",
+    "class":"button",
     "code": "KeyP",
     "keyCode": 80
   },
   {
     "key": "[",
+    "CapsLog": "[",
     "Shift": "{",
+    "CapsLogShift": "{",
+    "class":"button",
     "code": "BracketLeft",
     "keyCode": 219
   },
   {
     "key": "]",
+    "CapsLog": "]",
     "Shift": "}",
+    "CapsLogShift": "}",
+    "class":"button",
     "code": "BracketRight",
     "keyCode": 221
   },
   {
     "key": "Delete",
+    "CapsLog": "Delete",
     "Shift": "Delete",
+    "CapsLogShift": "Delete",
+    "class":"button2",
     "code": "Delete",
     "keyCode": 46
   },
   {
     "key": "Caps Lock",
+    "CapsLog": "Caps Lock",
     "Shift": "Caps Lock",
+    "CapsLogShift": "Caps Lock",
+    "class":"button4",
     "code": "CapsLock",
     "keyCode": 20
   },
   {
     "key": "a",
+    "CapsLog": "A",
     "Shift": "A",
+    "CapsLogShift": "a",
+    "class":"button",
     "code": "KeyA",
     "keyCode": 65
   },
   {
     "key": "s",
+    "CapsLog": "S",
     "Shift": "S",
+    "CapsLogShift": "s",
+    "class":"button",
     "code": "KeyS",
     "keyCode": 83
   },
   {
     "key": "d",
+    "CapsLog": "D",
     "Shift": "D",
+    "CapsLogShift": "d",
+    "class":"button",
     "code": "KeyD",
     "keyCode": 68
   },
   {
     "key": "f",
+    "CapsLog": "F",
     "Shift": "F",
+    "CapsLogShift": "f",
+    "class":"button",
     "code": "KeyF",
     "keyCode": 70
   },
   {
     "key": "g",
+    "CapsLog": "G",
     "Shift": "G",
+    "CapsLogShift": "g",
+    "class":"button",
     "code": "KeyG",
     "keyCode": 71
   },
   {
     "key": "h",
+    "CapsLog": "H",
     "Shift": "H",
+    "CapsLogShift": "h",
+    "class":"button",
     "code": "KeyH",
     "keyCode": 72
   },
   {
     "key": "j",
+    "CapsLog": "J",
     "Shift": "J",
+    "CapsLogShift": "j",
+    "class":"button",
     "code": "KeyJ",
     "keyCode": 74
   },
   {
     "key": "k",
+    "CapsLog": "K",
     "Shift": "K",
+    "CapsLogShift": "k",
+    "class":"button",
     "code": "KeyK",
     "keyCode": 75
   },
   {
     "key": "l",
+    "CapsLog": "L",
     "Shift": "L",
+    "CapsLogShift": "l",
+    "class":"button",
     "code": "KeyL",
     "keyCode": 76
   },
   {
     "key": ";",
+    "CapsLog": ";",
     "Shift": ":",
+    "CapsLogShift": ":",
+    "class":"button",
     "code": "Semicolon",
     "keyCode": 186
   },
   {
     "key": "'",
-    "Shift": "",
+    "CapsLog": "'",
+    "Shift": "\"",
+    "CapsLogShift": "\"",
+    "class":"button",
     "code": "Quote",
     "keyCode": 222
   },
   {
     "key": "\\",
+    "CapsLog": "\\",
     "Shift": "|",
+    "CapsLogShift": "|",
+    "class":"button",
     "code": "Backslash",
     "keyCode": 220
   },
   {
     "key": "Enter",
+    "CapsLog": "Enter",
     "Shift": "Enter",
+    "CapsLogShift": "Enter",
+    "class":"button2",
     "code": "Enter",
     "keyCode": 13
   },
   {
     "key": "Shift",
+    "CapsLog": "Shift",
     "Shift": "Shift",
+    "CapsLogShift": "Shift",
+    "class":"button4",
     "code": "ShiftLeft",
     "keyCode": 16
   },
   {
     "key": "z",
+    "CapsLog": "Z",
     "Shift": "Z",
+    "CapsLogShift": "z",
+    "class":"button",
     "code": "KeyZ",
     "keyCode": 90
   },
   {
     "key": "x",
+    "CapsLog": "X",
     "Shift": "X",
+    "CapsLogShift": "x",
+    "class":"button",
     "code": "KeyX",
     "keyCode": 88
   },
   {
     "key": "c",
+    "CapsLog": "C",
     "Shift": "C",
+    "CapsLogShift": "c",
+    "class":"button",
     "code": "KeyC",
     "keyCode": 67
   },
   {
     "key": "v",
+    "CapsLog": "V",
     "Shift": "V",
+    "CapsLogShift": "v",
+    "class":"button",
     "code": "KeyV",
     "keyCode": 86
   },
   {
     "key": "b",
+    "CapsLog": "B",
     "Shift": "B",
+    "CapsLogShift": "b",
+    "class":"button",
     "code": "KeyB",
     "keyCode": 66
   },
   {
     "key": "n",
+    "CapsLog": "N",
     "Shift": "N",
+    "CapsLogShift": "n",
+    "class":"button",
     "code": "KeyN",
     "keyCode": 78
   },
   {
     "key": "m",
+    "CapsLog": "M",
     "Shift": "M",
+    "CapsLogShift": "m",
+    "class":"button",
     "code": "KeyM",
     "keyCode": 77
   },
   {
     "key": ",",
+    "CapsLog": ",",
     "Shift": "<",
+    "CapsLogShift": "<",
+    "class":"button",
     "code": "Comma",
     "keyCode": 188
   },
   {
     "key": ".",
+    "CapsLog": ".",
     "Shift": ">",
+    "CapsLogShift": ">",
+    "class":"button",
     "code": "Period",
     "keyCode": 190
   },
   {
     "key": "/",
+    "CapsLog": "/",
     "Shift": "?",
+    "CapsLogShift": "?",
+    "class":"button",
     "code": "Slash",
     "keyCode": 191
   },
   {
     "key": "▲",
+    "CapsLog": "▲",
     "Shift": "▲",
+    "CapsLogShift": "▲",
+    "class":"button",
     "code": "ArrowUp",
     "keyCode": 38
   },
   {
     "key": "Shift",
+    "CapsLog": "Shift",
     "Shift": "Shift",
+    "CapsLogShift": "Shift",
+    "class":"button4",
     "code": "ShiftRight",
     "keyCode": 16
   },
   {
     "key": "Ctrl",
+    "CapsLog": "Ctrl",
     "Shift": "Ctrl",
+    "CapsLogShift": "Ctrl",
+    "class":"button2",
     "code": "ControlLeft",
     "keyCode": 17
   },
   {
     "key": "Win",
+    "CapsLog": "Win",
     "Shift": "Win",
+    "CapsLogShift": "Win",
+    "class":"button2",
     "code": "Win",
     "keyCode": ""
   },
   {
     "key": "Alt",
+    "CapsLog": "Alt",
     "Shift": "Alt",
+    "CapsLogShift": "Alt",
+    "class":"button2",
     "code": "AltLeft",
     "keyCode": 18
   },
   {
     "key": "    ",
+    "CapsLog": "    ",
     "Shift": "    ",
+    "CapsLogShift": "    ",
+    "class":"button3",
     "code": "Space",
     "keyCode": 32
   },
   {
     "key": "Alt",
-    "Shift": "",
+    "CapsLog": "Alt",
+    "Shift": "Alt",
+    "CapsLogShift": "Alt",
+    "class":"button2",
     "code": "AltRight",
     "keyCode": 18
   },
   {
     "key": "◄",
+    "CapsLog": "◄",
     "Shift": "◄",
+    "CapsLogShift": "◄",
+    "class":"button",
     "code": "ArrowLeft",
     "keyCode": 37
   },
   {
     "key": "▼",
+    "CapsLog": "▼",
     "Shift": "▼",
+    "CapsLogShift": "▼",
+    "class":"button",
     "code": "ArrowDown",
     "keyCode": 40
   },
   {
     "key": "►",
+    "CapsLog": "►",
     "Shift": "►",
+    "CapsLogShift": "►",
+    "class":"button",
     "code": "ArrowRight",
     "keyCode": 39
   },
   {
     "key": "Ctrl",
+    "CapsLog": "Ctrl",
     "Shift": "Ctrl",
+    "CapsLogShift": "Ctrl",
+    "class":"button2",
     "code": "ControlRight",
     "keyCode": 17
   }
