@@ -113,6 +113,7 @@ document.onkeydown = function keyStrokeDown(event) {
         textareaBlock.value += '\t';
       }
     }
+    textareaBlock.blur(); textareaBlock.focus();
   });
 };
 
@@ -150,13 +151,13 @@ function keyStrokeMauseDown(event) {
       event.target.classList.add(CssClassesKey.ACTIVE);
     } else if (event.target.id === 'Backspace') {
       event.target.classList.add(CssClassesKey.ACTIVE);
-      if (start !== 0 && start === end) {
+      if (start === end) {
         textareaBlock.value = (textareaBlock.value.substring(0, start - 1)
-                            + textareaBlock.value.substring(start));
+                              + textareaBlock.value.substring(start));
         textareaBlock.setSelectionRange(start - 1, start - 1);
       } else {
         textareaBlock.value = (textareaBlock.value.substring(0, start)
-                            + textareaBlock.value.substring(end));
+                              + textareaBlock.value.substring(end));
         textareaBlock.setSelectionRange(start, start);
       }
     } else if (event.target.id === 'Delete') {
@@ -169,6 +170,7 @@ function keyStrokeMauseDown(event) {
       textareaBlock.value += event.target.innerHTML;
     }
   }
+  textareaBlock.blur(); textareaBlock.focus();
 }
 
 keyboard.addEventListener('mousedown', keyStrokeMauseDown);
@@ -181,3 +183,4 @@ function keyStrokeMauseUp(event) {
 }
 
 keyboard.addEventListener('mouseup', keyStrokeMauseUp);
+keyboard.addEventListener('mouseout', keyStrokeMauseUp);
