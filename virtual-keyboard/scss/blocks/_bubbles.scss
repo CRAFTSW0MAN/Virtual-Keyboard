@@ -1,0 +1,56 @@
+.bubbles{
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  .bubbles-left, .bubbles-right{
+    width: 20%;
+    background: url('../assets/img/soap1.png') 0/35%  no-repeat,
+                url('../assets/img/soap2.png') right/35%  no-repeat,
+                url('../assets/img/soap3.png') left/10%  no-repeat,
+                url('../assets/img/soap1.png') left/20%  no-repeat,
+                url('../assets/img/soap2.png') right/25%  no-repeat,
+                url('../assets/img/soap3.png') 0/20%  no-repeat,
+                url('../assets/img/soap1.png') left/15%  no-repeat,
+                url('../assets/img/soap2.png') right/35%  no-repeat,
+                url('../assets/img/soap3.png') 0/10%  no-repeat,
+                url('../assets/img/soap1.png') 0/15%  no-repeat,
+                url('../assets/img/soap2.png') left/10%  no-repeat,
+                url('../assets/img/soap3.png') right/30%  no-repeat,
+                url('../assets/img/soap1.png') left/25%  no-repeat,
+                url('../assets/img/soap2.png') left/35%  no-repeat,
+                url('../assets/img/soap3.png') 0/30%  no-repeat,
+                url('../assets/img/soap1.png') right/35%  no-repeat,
+                url('../assets/img/soap2.png') left/35%  no-repeat,
+                url('../assets/img/soap3.png') 0/25%  no-repeat;
+    animation: loading 20s infinite linear;
+    background-position: 50% 1500px,
+                        left 2500px,
+                        right,
+                        50% 1500px,
+                        right 500px,
+                        left,
+                        70% 1000px,
+                        100% 50px,
+                        left 1500px,
+                        30% 300px,
+                        right 1000px,
+                        right,
+                        40% 800px,
+                        right 900px,
+                        left,
+                        20% 600px,
+                        90% 100px,
+                        left 200px;
+  }
+  @keyframes loading {
+    0%{background-position: -200px -200px}
+  }
+  .bubbles-right{
+    animation: loading2 15s infinite linear;
+  }
+  @keyframes loading2 {
+    0%{background-position: 600px -200px}
+  }
+}

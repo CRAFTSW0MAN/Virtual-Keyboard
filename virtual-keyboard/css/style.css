@@ -1,0 +1,210 @@
+@charset "UTF-8";
+body {
+  background-image: url("../assets/img/on-sait-qu-il-faut-mettre-du-liquide-vaisselle-pour-faire-des-bulles-de-savon-c-est-lui-qui-contient-les-molecules-de-savon-photo-adobe-stock-1676021913.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bubbles {
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.bubbles .bubbles-left, .bubbles .bubbles-right {
+  width: 20%;
+  background: url("../assets/img/soap1.png") 0/35% no-repeat, url("../assets/img/soap2.png") right/35% no-repeat, url("../assets/img/soap3.png") left/10% no-repeat, url("../assets/img/soap1.png") left/20% no-repeat, url("../assets/img/soap2.png") right/25% no-repeat, url("../assets/img/soap3.png") 0/20% no-repeat, url("../assets/img/soap1.png") left/15% no-repeat, url("../assets/img/soap2.png") right/35% no-repeat, url("../assets/img/soap3.png") 0/10% no-repeat, url("../assets/img/soap1.png") 0/15% no-repeat, url("../assets/img/soap2.png") left/10% no-repeat, url("../assets/img/soap3.png") right/30% no-repeat, url("../assets/img/soap1.png") left/25% no-repeat, url("../assets/img/soap2.png") left/35% no-repeat, url("../assets/img/soap3.png") 0/30% no-repeat, url("../assets/img/soap1.png") right/35% no-repeat, url("../assets/img/soap2.png") left/35% no-repeat, url("../assets/img/soap3.png") 0/25% no-repeat;
+  -webkit-animation: loading 20s infinite linear;
+          animation: loading 20s infinite linear;
+  background-position: 50% 1500px, left 2500px, right, 50% 1500px, right 500px, left, 70% 1000px, 100% 50px, left 1500px, 30% 300px, right 1000px, right, 40% 800px, right 900px, left, 20% 600px, 90% 100px, left 200px;
+}
+@-webkit-keyframes loading {
+  0% {
+    background-position: -200px -200px;
+  }
+}
+@keyframes loading {
+  0% {
+    background-position: -200px -200px;
+  }
+}
+.bubbles .bubbles-right {
+  -webkit-animation: loading2 15s infinite linear;
+          animation: loading2 15s infinite linear;
+}
+@-webkit-keyframes loading2 {
+  0% {
+    background-position: 600px -200px;
+  }
+}
+@keyframes loading2 {
+  0% {
+    background-position: 600px -200px;
+  }
+}
+
+.keyboard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 950px;
+  font-family: "Sigmar", cursive;
+  font-weight: 900;
+  border-radius: 20%;
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0 -3px 8px, inset rgba(252, 255, 255, 0.7) 0 3px 8px, rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.keyboard .keyboard-title {
+  text-align: center;
+  font-size: 50px;
+  margin: 20px auto;
+}
+.keyboard .keyboard-buttons {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  opacity: 1;
+}
+.keyboard .keyboard-buttons .buttons-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.keyboard .keyboard-buttons .buttons-row .button {
+  width: 40px;
+  height: 50px;
+  border-radius: 40%;
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0 -3px 8px, inset rgba(252, 255, 255, 0.7) 0 3px 8px, rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
+  cursor: pointer;
+  position: relative;
+  font-size: 25px;
+  font-weight: 900;
+  margin: 3px;
+  transition: 0.3s;
+}
+.keyboard .keyboard-buttons .buttons-row .button::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 25px;
+  border-radius: 40%;
+  margin: auto;
+  top: 2px;
+  left: 5px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.8) 100%);
+  transition: 0.3s;
+}
+.keyboard .keyboard-buttons .buttons-row .button2 {
+  height: 50px;
+  border-radius: 20%;
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0 -3px 8px, inset rgba(252, 255, 255, 0.7) 0 3px 8px, rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
+  cursor: pointer;
+  position: relative;
+  font-size: 25px;
+  margin: 3px;
+  transition: 0.3s;
+}
+.keyboard .keyboard-buttons .buttons-row .button2::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 25px;
+  border-radius: 30%;
+  margin: auto;
+  top: 4px;
+  left: 5px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.8) 100%);
+  transition: 0.3s;
+}
+.keyboard .keyboard-buttons .buttons-row .button3,
+.keyboard .keyboard-buttons .buttons-row .button4 {
+  width: 240px;
+  height: 55px;
+  border-radius: 20%;
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0 -3px 8px, inset rgba(252, 255, 255, 0.7) 0 3px 8px, rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
+  cursor: pointer;
+  position: relative;
+  font-size: 25px;
+  margin: 3px;
+  transition: 0.3s;
+}
+.keyboard .keyboard-buttons .buttons-row .button4 {
+  width: 130px;
+}
+.keyboard .keyboard-buttons .buttons-row .button3::after,
+.keyboard .keyboard-buttons .buttons-row .button4::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 25px;
+  border-radius: 30%;
+  margin: auto;
+  top: 5px;
+  left: 10px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.8) 100%);
+  transition: 1s;
+}
+.keyboard .keyboard-buttons .buttons-row .led-blue {
+  background: rgb(0, 103, 175);
+  background: linear-gradient(0deg, rgb(214, 218, 145) 0%, rgb(0, 103, 175) 100%);
+  transition: 0.3s;
+}
+.keyboard .keyboard-buttons .buttons-row .active {
+  background: rgb(129, 164, 188);
+  background: linear-gradient(0deg, rgb(225, 243, 255) 0%, rgba(245, 215, 43, 0.8) 80%);
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0 -3px 8px, inset rgba(252, 255, 255, 0.7) 0 3px 8px, rgba(0, 0, 0, 0.8) 0 3px 8px -3px, 0 0 15px rgba(245, 215, 43, 0.8), 0 0 5px 5px rgb(255, 255, 255);
+}
+.keyboard .keyboard-buttons .buttons-row .button2:hover.led-blue:hover,
+.keyboard .keyboard-buttons .buttons-row .button3:hover.led-blue:hover,
+.keyboard .keyboard-buttons .buttons-row .button4:hover.led-blue:hover,
+.keyboard .keyboard-buttons .buttons-row .button:hover.led-blue:hover {
+  background: rgb(129, 164, 188);
+  background: linear-gradient(0deg, rgb(225, 243, 255) 0%, rgba(245, 215, 43, 0.8) 80%);
+}
+.keyboard .keyboard-visualization {
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  padding: 40px 80px;
+  transform: translate(-50%, -50%);
+  border-radius: 40px;
+  content: "";
+  width: 70%;
+  height: 25%;
+  font-family: "Pacifico", cursive;
+  font-size: 45px;
+  background: linear-gradient(#e3dc8a, #45deca);
+  box-shadow: inset 20px 20px 20px -16px rgba(0, 0, 0, 0.6), 1px 1px 5px rgb(255, 255, 255);
+  resize: none; /* Запрещаем изменять размер */
+}
+.keyboard .keyboard-info {
+  position: absolute;
+  z-index: 11;
+  left: 50%;
+  bottom: 0;
+  width: 1000px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Sigmar", cursive;
+}
+.keyboard .keyboard-info .info-language-change,
+.keyboard .keyboard-info .info-system {
+  font-family: 30px;
+}/*# sourceMappingURL=style.css.map */

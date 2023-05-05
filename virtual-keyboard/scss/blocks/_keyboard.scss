@@ -1,0 +1,170 @@
+.keyboard{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  width: 1000px;
+  height: 950px;
+  font-family: 'Sigmar', cursive;
+  font-weight: 900;
+  border-radius: 20%;
+  box-shadow: inset rgba(0,0,0,.6) 0 -3px 8px, inset rgba(252,255,255,.7) 0 3px 8px, rgba(0,0,0,.8) 0 3px 8px -3px;
+  background:  transparentize( rgb(255, 255, 255), 0.8);
+  backdrop-filter: blur(5px);
+
+  .keyboard-title{
+    text-align: center;
+    font-size: 50px;
+    margin: 20px auto;
+  }
+
+  .keyboard-buttons{
+    position: absolute;
+    z-index: 10;
+    left:50%;
+    top: 70%;
+    transform:translate(-50%, -50%);
+    width: 800px;
+    opacity: 1;
+    .buttons-row{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .button{
+        width: 40px;
+        height: 50px;
+        border-radius: 40%;
+        box-shadow: inset rgba(0,0,0,.6) 0 -3px 8px, inset rgba(252,255,255,.7) 0 3px 8px, rgba(0,0,0,.8) 0 3px 8px -3px;
+        cursor: pointer;
+        position: relative;
+        font-size: 25px;
+        font-weight: 900;
+        margin: 3px;
+        transition: 0.3s;
+      }
+
+      .button::after{
+        display: block;
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 25px;
+        border-radius: 40%;
+        margin: auto;
+        top: 2px;
+        left: 5px;
+        background: rgb(255, 255, 255);
+        background: linear-gradient( 0deg,rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.8) 100%);
+        transition: 0.3s;
+      }
+      .button2{
+        height: 50px;
+        border-radius: 20%;
+        box-shadow: inset rgba(0,0,0,.6) 0 -3px 8px, inset rgba(252,255,255,.7) 0 3px 8px, rgba(0,0,0,.8) 0 3px 8px -3px;
+        cursor: pointer;
+        position: relative;
+        font-size: 25px;
+        margin: 3px;
+        transition: 0.3s;
+      }
+
+      .button2::after{
+        display: block;
+        position: absolute;
+        content: "";
+        width: 90%;
+        height: 25px;
+        border-radius: 30%;
+        margin: auto;
+        top: 4px;
+        left: 5px;
+        background: rgb(255, 255, 255);
+        background: linear-gradient( 0deg,rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.8) 100%);
+        transition: 0.3s;
+      }
+
+      .button3,
+      .button4 {
+        width: 240px;
+        height: 55px;
+        border-radius: 20%;
+        box-shadow: inset rgba(0,0,0,.6) 0 -3px 8px, inset rgba(252,255,255,.7) 0 3px 8px, rgba(0,0,0,.8) 0 3px 8px -3px;
+        cursor: pointer;
+        position: relative;
+        font-size: 25px;
+        margin: 3px;
+        transition: 0.3s;
+      }
+      .button4 {
+        width: 130px;
+      }
+
+      .button3::after,
+      .button4::after{
+        display: block;
+        position: absolute;
+        content: "";
+        width: 90%;
+        height: 25px;
+        border-radius: 30%;
+        margin: auto;
+        top: 5px;
+        left: 10px;
+        background: rgb(255, 255, 255);
+        background: linear-gradient( 0deg,rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.8) 100%);
+        transition: 1s;
+      }
+      .led-blue {
+        background: rgb(0, 103, 175);
+        background: linear-gradient( 0deg,rgb(214, 218, 145) 0%,rgba(0, 103, 175, 1) 100%);
+        transition: 0.3s;
+      }
+      .active{
+        background: rgb(129, 164, 188);
+        background: linear-gradient( 0deg,rgba(225, 243, 255, 1) 0%,rgba(245, 215, 43, 0.8) 80%);
+        box-shadow:  inset rgba(0,0,0,.6) 0 -3px 8px, inset rgba(252,255,255,.7) 0 3px 8px, rgba(0,0,0,.8) 0 3px 8px -3px, 0 0 15px rgba(245, 215, 43, 0.8), 0 0 5px 5px rgba(255, 255, 255, 1);
+      }
+      .button2:hover.led-blue:hover,
+      .button3:hover.led-blue:hover,
+      .button4:hover.led-blue:hover,
+      .button:hover.led-blue:hover{
+        background: rgb(129, 164, 188);
+        background: linear-gradient( 0deg,rgba(225, 243, 255, 1) 0%,rgba(245, 215, 43, 0.8) 80%);
+      }
+    }
+  }
+  .keyboard-visualization {
+    display: block;
+    position: absolute;
+    top:30%;
+    left:50%;
+    padding: 40px 80px;
+    transform:translate(-50%, -50%);
+    border-radius: 40px;
+    content: "";
+    width: 70%;
+    height: 25%;
+    font-family: 'Pacifico', cursive;
+    font-size: 45px;
+    background: linear-gradient(#e3dc8a,#45deca);
+    box-shadow:inset 20px 20px 20px -16px rgba(0,0,0,0.6),1px 1px 5px rgba(255, 255, 255, 1);
+    resize: none; /* Запрещаем изменять размер */
+  }
+  .keyboard-info{
+    position: absolute;
+    z-index: 11;
+    left:50%;
+    bottom: 0;
+    width: 1000px;
+    transform:translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Sigmar', cursive;
+
+    .info-language-change,
+    .info-system{
+      font-family: 30px;
+    }
+  }
+}
